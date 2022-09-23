@@ -1,3 +1,22 @@
+#https://leetcode.com/problems/longest-common-subsequence
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        n=len(text1)
+        m=len(text2)
+        dp=[[0]*(m+1) for _ in range(n)]
+        for x in range(n):
+            for y in range(m):
+                if text1[x]==text2[y]:
+                    dp[x][y]=dp[x-1][y-1]+1
+                else:
+                    dp[x][y]=max(dp[x-1][y],dp[x][y-1])
+        return dp[n-1][m-1]
+
+
+
+
+
+
 #import sys
 #sys.setrecursionlimit(1000000)
 def lcs_length(x,y,m,n):
