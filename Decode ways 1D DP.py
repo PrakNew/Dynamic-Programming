@@ -3,6 +3,7 @@
 # at a point if the number lies between 1-9 then it is an addition of privious place dp value because if suppose 1,2 is the previous value then if we add suppose 2 then valid cases previously were [(1,2),(12)] and now it becomes [(1,2,2),(12,2)] when added individually
 # secondly we need to take the previous element concatinate and check if it lies between 10-26 if so we need to add the i-2 element result to the solution for eg 122 was given till 12 we get [(1,2),(12)] but lets suppose we add 3 now to the end so in that case 23 is checked to be valid and then we get [(1,2,23),(12,23)] so this is also valid so we need to add both the above and below result to produce our answer
 
+#https://leetcode.com/problems/decode-ways/
 
 class Solution:
     def numDecodings(self, s: str) -> int:
