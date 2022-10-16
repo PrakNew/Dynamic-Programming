@@ -4,7 +4,15 @@
 # secondly we need to take the previous element concatinate and check if it lies between 10-26 if so we need to add the i-2 element result to the solution for eg 122 was given till 12 we get [(1,2),(12)] but lets suppose we add 3 now to the end so in that case 23 is checked to be valid and then we get [(1,2,23),(12,23)] so this is also valid so we need to add both the above and below result to produce our answer
 
 #https://leetcode.com/problems/decode-ways/
+'''
+s='226'
+['2'] ['26'] == [b,z]
+['22']['6] == [v][f]
+[2][2][6] = [b][b][f]
 
+total 3 ways
+
+'''
 class Solution:
     def numDecodings(self, s: str) -> int:
         def convert(s):
