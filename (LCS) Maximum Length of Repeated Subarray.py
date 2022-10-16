@@ -1,6 +1,8 @@
 #https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 #Largest common subarray
-
+'''
+nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7] ------->[3,2,1]
+'''
 class Solution:
     def findLength(self, nums1: List[int], nums2: List[int]) -> int:
         n,m=len(nums1),len(nums2)
