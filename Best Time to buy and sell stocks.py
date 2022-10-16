@@ -1,4 +1,12 @@
 #https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
+'''
+k = 2, prices = [3,2,6,5,0,3] 
+buy on day 2 ie at price 2 then sell it at day 3 at price 6 ---->profit(6-2=4) ------------------->k=1
+buy on day 5 and sell on day 6 so------------------------------> profit(3-0=3) ------------------->k=2
+net profit = 4+3 = 7
+'''
+
+
 #level 2
 from functools import lru_cache
 class Solution:
