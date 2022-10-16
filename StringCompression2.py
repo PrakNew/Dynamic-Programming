@@ -1,5 +1,7 @@
 #https://leetcode.com/problems/string-compression-ii/
-
+'''
+k=3 , s='aabbbaaa' ->'a2b3a3' ----------------------------> a2a3 ->a5 --> length is 2
+'''
 class Solution:
     def getLengthOfOptimalCompression(self, s: str, k: int) -> int:
         @cache
