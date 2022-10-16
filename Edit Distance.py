@@ -2,7 +2,16 @@
 # A Dynamic Programming based Python program for edit
 # distance problem
 
+'''
+str1 = “sunday”, str2 = “saturday”
+we can convert str1 to str2 like 
+convert n->t
+add ->u
+add ->r
 
+
+total steps = 3
+'''
 def editDistDP(str1, str2, m, n):
 	# Create a table to store results of subproblems
 	dp = [[0 for x in range(n + 1)] for x in range(m + 1)]
